@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+  <link href="./addFilme.html">
+  <title> AluraFlix</title>
+</head>
+
+  <body>
+    <div id="cima">
+      <div class="principal-logos">
+      <span id="logo">ALURAFLIX</span>
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg"
+          class="page-logo" alt="Logo imersão Dev">
+      </div>
+      <span id="texto">DIGITE O NOME DO FILME OU SELECIONE DA LISTA:</span>
+      <div class="dropdown">
+        <button class="dropbtn">LISTA</button>
+        <ul class="dropdown-content">
+          <li id="0" value="0" onclick="passaValor(this.value)">Star Wars</li>
+          <li id="1" value="1" onclick="passaValor(this.value)">Liga da Justiça</li>
+          <li id="2" value="2" onclick="passaValor(this.value)">Toy Story</li>
+          <li id="3" value="3" onclick="passaValor(this.value)">Interstellar</li>
+          <li id="4" value="4" onclick="passaValor(this.value)">Harry Potter</li>
+          <li id="5" value="5" onclick="passaValor(this.value)">Transformers</li>
+        </ul>
+      </div>
+      <input id="filme" type="text">
+      <input class="dropbtn" id="ok" type="submit" value="OK" onclick="exibirFilme()">
+      <input class="dropbtn" type="button" src="./addFilme.html" value="Inserir">
+    </div>
+    <div id="baixo">
+      <div id="capa">
+      </div>
+      <div id="descricao">
+
+      </div>
+    </div>
+    <script src="./js/principal.js"></script>
+    <script src="./js/filmAdd.js"></script>
+  </body>
+
+</html>

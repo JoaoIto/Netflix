@@ -9,6 +9,16 @@ body{
   height: 100%;
   font-family: 'Oswald';
 }
+
+.logo-imersao{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+}
+
+.page-logo {
+  height: 30px;
+}
 a{
   text-decoration: none;
   margin-left: 10px;
@@ -29,7 +39,7 @@ a:hover{
 }
 
 #cima{
-  background-color: #ffffff;
+  background-color: #363636;
   height: 250px;
   width: 100%;
   font-family: 'Oswald';
@@ -40,8 +50,8 @@ a:hover{
   display: block;
   font-weight: bold;
   font-size: 50px;
-  color: #8d47fd;
-  text-shadow: 4px 4px 4px #56009c;
+  color: #fd4747;
+  text-shadow: 4px 4px 4px #9c0000;
 }
 
 #texto{
@@ -54,7 +64,7 @@ a:hover{
   margin-top: 20px;
   width: 250px;
   height: 34px;
-  border: 2px solid #391D71;
+  border: 2px solid #711d1d;
   padding-left: 10px;
   font-family: inherit;
   font-weight: 500;
@@ -75,8 +85,8 @@ option{
   font-family: inherit;
   font-weight: bold;
   font-size: 15px;
-  background-color: #391D71;
-  border: 2px solid #391D71;
+  background-color: #711d1d;
+  border: 2px solid #711d1d;
   cursor: pointer;
 }
 
@@ -126,8 +136,8 @@ option{
 .dropbtn {
   width: 70px;
   height: 35px;
-  background-color: #391D71;
-  box-shadow: 5px #56009c; 
+  background-color: #711d1d;
+  box-shadow: 5px #9c0000; 
   color: white;
   text-transform: uppercase;
   font-family: "oswald";
@@ -135,6 +145,13 @@ option{
   font-weight: 700;
   border: none;
   cursor: pointer;
+  transition: all 0.5s;
+}
+
+.dropbtn:hover {
+
+  background-color: #fd4747;
+  transform: scale(1.05);
 }
 
 .dropdown {
@@ -167,10 +184,10 @@ option{
   display: block;
 }
 
-.dropdown:hover .dropbtn {
+.dropdown:hover {
   background-color: white;
-  color: #391D71;
-  border: 2px solid #391D71;
+  color: #711d1d;
+  border: 2px solid #a00909;
 }
 
 #imersao{
@@ -191,4 +208,3 @@ option{
   color: gray;
   font-size: 25px;
 }
- 
